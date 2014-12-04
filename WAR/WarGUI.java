@@ -156,6 +156,7 @@ public class WarGUI extends JFrame
          {
             do
             {
+               
                war.drawCards();
                war.compareCards();
                status.setText(war.getMsg());
@@ -166,6 +167,11 @@ public class WarGUI extends JFrame
                   playerWarCardPic.setIcon(backIcon);
                   computerWarCardPic.setIcon(backIcon);
                   status.setText("War! ");                 
+               }
+               else
+               {
+                  playerWarCardPic.setIcon(null);
+                  computerWarCardPic.setIcon(null);
                }
             }while(war.gameOver());
   
